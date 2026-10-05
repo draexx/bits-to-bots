@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=De Bits a Bots
+Description=Pantalla de carga personalizada de Bits a Bots
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/bits-to-bots
+ScriptFile=/usr/share/plymouth/themes/bits-to-bots/bits-to-bots.script
