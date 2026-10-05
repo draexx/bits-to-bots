@@ -25,10 +25,11 @@ progress = 0;
 fun refresh_callback () {
     # Incrementamos el progreso para calcular el ciclo de la animación
     global.progress += 0.04;
-    
+    wave1 = Math.Sin(global.progress);
+    wave2 = Math.Sin(global.progress * 2);
     # Usamos la función matemática Seno para crear una onda suave de opacidad
     # Esto genera un valor que fluctúa suavemente entre 0.3 y 1.0 (brillo)
-    opacity = (Math.Sin(global.progress) * 0.35) + 0.65;
+    opacity = ((wavw1 + wave2) / 2) * 0.35 + 0.65;
     
     # Aplicamos la opacidad calculada al logotipo en este fotograma
     global.logo_sprite.SetOpacity(opacity);
